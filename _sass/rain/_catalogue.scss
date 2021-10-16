@@ -2,9 +2,13 @@
   &-item {
     border-bottom: 1px solid $grey-2;
     color: $default-color;
-    display: inline-block;
+    display: block;
     padding: 2rem 0;
 
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
     &:hover .catalogue-line,
     &:focus .catalogue-line {
       width: 5rem;
@@ -13,10 +17,13 @@
     &:last-child {
       border: 0;
     }
+    p {
+      color: $default-tint;
+    }
   }
 
   &-time {
-    color: $default-tint;
+    color: $teal-light;
     font-family: $sans-serif;
     letter-spacing: .5px;
   }
@@ -32,7 +39,7 @@
 
   &-line {
     @include transition(all .3s ease-out);
-    border-top: .15rem solid $default-shade;
+    border-top: .15rem solid $default-tint;
     display: block;
     width: 3rem;
   }

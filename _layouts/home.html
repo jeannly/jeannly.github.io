@@ -1,21 +1,25 @@
 ---
 layout: default
 ---
-
+<script src="../assets/js/post-modals.js"></script>
 <div class="catalogue">
   {% for post in paginator.posts %}
-    <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
-      <div>
+  <!-- Make modal -->
+    <div id="{{ post.url }}" class="modal">
+      <div class="modal-post">
+        <span class="modal-post-close">&times;</span>
+        <iframe src="{{ post.url | prepend: site.baseurl }}"></iframe>
+      </div>
+    </div>
+  <!-- Make post card -->
+    <div class="catalogue-item" onclick="handleCatalogueClick('{{ post.url }}')">
         <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
         <h1 class="catalogue-title">{{ post.title }}</h1>
         <div class="catalogue-line"></div>
-
         <p>
-          {{ post.content | strip_html | truncatewords: 65 }}
+        {{ post.description | truncatewords: 15}}
         </p>
-
-      </div>
-    </a>
+    </div>
   {% endfor %}
 </div>
 

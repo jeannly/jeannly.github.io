@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Example Content"
-author: "Inela"
+author: "Jean"
+description: "15 word description"
 tags: ["jekyll", "docs", "example", "content"]
 ---
 

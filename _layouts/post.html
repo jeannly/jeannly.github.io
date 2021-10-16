@@ -3,16 +3,21 @@ layout: default
 ---
 
 <div class="post">
-
+<!-- Opens normal content links in new tab -->
+<base target="_blank"> 
   <div class="post-info">
     {% if page.date %}
       <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
     {% endif %}
   </div>
   <h1 class="post-title">
-    <div>{{ page.title }}</div>
+   
+    <div id="{{ page.title }}">{{ page.title }}</div>
   </h1>
-
+  <!-- Opens title link in current tab (because of modal) -->
+  <div style="text-align:center">
+  <a href="{{ post.url | prepend: site.baseurl }}" target="_parent" style="font-size:x-small">Full view</a>
+  </div>
   {{ content }}
 
 </div>
