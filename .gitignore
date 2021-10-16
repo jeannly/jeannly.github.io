@@ -2,3 +2,6 @@
 _site/
 .jekyll-cache
 .jekyll-metadata
+
+#Obviously drafts shouldn't be public
+_drafts/
