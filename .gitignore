@@ -1,0 +1,4 @@
+# Suggested files to add to .gitignore, according to https://jekyllrb.com/docs/structure/
+_site/
+.jekyll-cache
+.jekyll-metadata

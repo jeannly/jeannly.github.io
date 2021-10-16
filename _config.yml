@@ -1,0 +1,40 @@
+# Site settings
+title:          Jean Yap
+description:    
+url:            http://www.jeanlyap.com/
+
+# Author
+author:
+  name:         Jean Yap
+  email:        jeanlyap@gmail.com
+  url:          http://www.jeanlyap.com/
+
+# Build settings
+markdown:       kramdown
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+ # - jemoji
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       100
+
+# Related posts settings
+related_posts_section:
+  max_count:        5
+  min_common_tags:  2
+
+# Links to social media
+social:
+  email: jeanlyap@gmail.com
+  github: https://github.com/jeannly
+  twitter: https://twitter.com/jeanlyap
+  linkedin: https://www.linkedin.com/in/jeanlyap/
