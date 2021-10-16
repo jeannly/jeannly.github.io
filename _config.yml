@@ -1,13 +1,13 @@
 # Site settings
 title:          Jean Yap
 description:    
-url:            http://www.jeanlyap.com/
+url:            https://www.jeanlyap.com/
 
 # Author
 author:
   name:         Jean Yap
   email:        jeanlyap@gmail.com
-  url:          http://www.jeanlyap.com/
+  url:          https://www.jeanlyap.com/
 
 # Build settings
 markdown:       kramdown
