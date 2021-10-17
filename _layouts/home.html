@@ -7,8 +7,8 @@ layout: default
   <!-- Make modal -->
     <div id="{{ post.url }}" class="modal">
       <div class="modal-post">
-        <span class="modal-post-close">&times;</span>
         <iframe src="{{ post.url | prepend: site.baseurl }}"></iframe>
+        <button id="{{ post.url | append: '-btn' }}" class="modal-post-btn">Close Post</button>
       </div>
     </div>
   <!-- Make post card -->
