@@ -65,13 +65,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt orna
 * Unordered list item 2
 * Unordered list item 3
 
-# Links #todo link na repo
-{% highlight markdown %}
-Check out rain on [GitHub](#todo dodati link na github).
-{% endhighlight %}
-
-Check out rain on [GitHub](#todo dodati link na github).
-
 # Images
 {% highlight markdown %}
 ![Placeholder image](https://placehold.it/800x400 "Placeholder image")
